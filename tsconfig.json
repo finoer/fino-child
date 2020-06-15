@@ -1,0 +1,44 @@
+{
+  "compilerOptions": {
+    "moduleResolution": "node",
+    "target": "esnext",
+    "module": "esnext",
+    "lib": [
+      "ES5",
+      "ES6",
+      "ES7",
+      "ES2015",
+      "ES2016",
+      "ES2017",
+      "ES2018",
+      "ESNext",
+      "dom"
+    ],
+    "outDir": "./dist/",
+    "allowJs": true,
+    "strict": true,
+    "sourceMap": true,
+    "rootDir": "../../",
+    "typeRoots": ["node_modules/@types"],
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": "./",
+    "paths": {
+      "@root/*": ["./*"],
+      "@/*": ["src/*"],
+      "Packs/*": ["../../packages/*"],
+      "@test/*": ["test/*"]
+    }
+  },
+  "include": ["src", "test","../../packages/finoer-core/src/*.ts"],
+  "files": [],
+  "references": [
+    { "path": "../../packages/finoer-core" },
+    ],
+  // typedoc
+  "typedocOptions": {
+    "inputFiles": ["src"],
+    "out": "docs",
+    "mode": "file",
+    "theme": "default"
+  }
+}
