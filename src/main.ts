@@ -3,7 +3,7 @@
  * @author xxx
  * @since 2020.01.01
  */
-import Finoer from 'Packs/finoer-core'
+import Finoer from '@finoer/finoer-core'
 
 export default class Main {
     public static main(): void {
