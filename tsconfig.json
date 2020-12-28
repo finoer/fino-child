@@ -32,7 +32,6 @@
   "include": ["src", "test","../../packages/finoer-core/src/*.ts"],
   "files": [],
   "references": [
-    { "path": "../../packages/finoer-core" },
     ],
   // typedoc
   "typedocOptions": {
